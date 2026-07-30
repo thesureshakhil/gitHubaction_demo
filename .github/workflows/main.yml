@@ -1,0 +1,17 @@
+name: my-cicd
+
+on:
+  push:
+   branches:
+    - main
+  workflow_dispatch:
+
+jobs:
+  demo:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Checkout
+      uses: actions/checkout@v7.0.1 
+      
+    - name: list the contents
+      run: ls -a
