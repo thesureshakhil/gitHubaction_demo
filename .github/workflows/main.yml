@@ -15,3 +15,6 @@ jobs:
       
     - name: list the contents
       run: ls -a
+
+    - name: path
+      run: pwd
