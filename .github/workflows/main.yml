@@ -9,12 +9,4 @@ jobs:
   demo:
    runs-on: ubuntu-latest
    steps:
-    - run: echo "Environment: $NAME"
-    - name: Checkout
-      uses: actions/checkout@v7.0.1 
-      
-    - name: list the contents
-      run: ls -a
-
-    - name: path
-      run: pwd
+    - run: "Environment: $NAME"
