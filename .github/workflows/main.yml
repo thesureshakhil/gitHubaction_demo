@@ -1,12 +1,10 @@
-name: my-cicd
-
+name: my-variable
 on:
-  workflow_dispatch:
-  
-env:
-  NAME: Akhil
+ workflow_dispatch: 
 jobs:
   demo:
    runs-on: ubuntu-latest
    steps:
-    - run: "Environment: $NAME"
+     - name: list the repo name
+       run: echo "repo is ${{ github.repository }}"
+  
